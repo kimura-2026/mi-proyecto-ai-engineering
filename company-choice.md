@@ -19,7 +19,7 @@ Nexova todavía realiza varios procesos de selección y formación de manera man
 
 Nexova necesita recomendar programas de formación según las necesidades de cada cliente. Una herramienta de IA podría analizar los objetivos, las habilidades y el tiempo disponible de cada persona para sugerirle un itinerario de aprendizaje adecuado.
 
-## Mi idea de agente de IA
+## My AI Agent Idea
 
 ### Agente de formación personalizada
 
