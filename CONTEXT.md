@@ -1,16 +1,46 @@
-# Your company context
+# Company Context: Nexova Solutions
 
-**Replace this content** with the CONTEXT for your assigned company:
+## General Profile
 
-- **Brasaland** — `brasaland-BRIEFING.md` (grilled food restaurant chain, Colombia + Florida)
-- **TrackFlow** — `trackflow-BRIEFING.md` (last-mile delivery and warehouse, US + Spain)
-- **Nexova** — `nexova-BRIEFING.md` (HR consulting and talent acquisition, Spain + US)
-- **HealthCore** — `healthcore-BRIEFING.md` (outpatient healthcare clinic network, US + UK)
+Nexova Solutions is a human resources and talent recruitment consultancy founded in 2011. Its main office is in Valencia, Spain, with another office in Miami, United States. The company has approximately 120 employees and generates close to 8 million dollars in annual revenue.
 
-Project statements will point you to the correct context file. Use its contents to build your project context here so that all project work and AI coding agents use the same domain data, field names, and constraints. Avoid copying and pasting the content; use your agents first.
+## Business Lines
 
----
+- Recruitment of executives and mid-level professionals.
+- Outsourced customer support teams for companies.
+- Corporate training in leadership and interpersonal skills.
 
-_Until you add your context, keep this placeholder so the repo structure is clear._
+## Current Situation
 
-_Estas instrucciones también están disponibles en [español](./CONTEXT.es.md)._
+Nexova has extensive experience and a strong network of clients and candidates, but many of its processes are still manual. The company relies on emails, forms, documents, and spreadsheets that are not properly connected. This slows down recruitment, training, sales, customer support, and report preparation.
+
+## Priority Departments
+
+### Corporate Training
+
+The team, led by Elena Vargas, manages its course catalog using PDF files, forms, and spreadsheets. It needs an enrollment platform, progress tracking, and training recommendations adapted to each client.
+
+### Recruitment Operations
+
+The team, led by Javier Almeida, reviews résumés and communicates with candidates manually. It needs tools to search for profiles, organize recruitment processes, and keep candidates and clients informed.
+
+## Main Data
+
+- Clients and their recruitment or training needs.
+- Candidates, résumés, experience, and skills.
+- Job openings and position requirements.
+- Courses, delivery formats, duration, and learning objectives.
+- Enrollment, attendance, and participant progress.
+- Questions and communications involving clients, candidates, and students.
+
+## Rules and Considerations
+
+- Personal data belonging to candidates, employees, and students must be protected.
+- AI may assist with searching, organizing, and recommending, but people must make the final decisions.
+- Recommendations must be understandable and reviewable.
+- Systems must prevent discrimination and bias when evaluating candidates.
+- Spanish will be the primary language; English support may be added later.
+
+## Initial Project Focus
+
+The first proposed agent will be a personalized training assistant. It will receive information about the user’s goals, skills, experience, and availability; consult Nexova’s course catalog; and propose a learning path. The Corporate Training team will be able to review and approve its recommendations.
