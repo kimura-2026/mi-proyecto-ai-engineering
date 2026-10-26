@@ -1,16 +1,46 @@
-# Contexto de tu empresa
+# Contexto de empresa: Nexova Solutions
 
-**Reemplaza este contenido** por el contexto de la empresa que te hayan asignado:
+## Perfil general
 
-- **Brasaland** — `brasaland-BRIEFING.md` (cadena de restaurantes de comida a la parrilla, Colombia + EEUU)
-- **TrackFlow** — `trackflow-BRIEFING.md` (última milla y almacén, EEUU + España)
-- **Nexova** — `nexova-BRIEFING.md` (consultoría de RR. HH. y adquisición de talento, España + EEUU)
-- **HealthCore** — `healthcore-BRIEFING.md` (red de clínicas ambulatorias, EE.UU. + Reino Unido)
+Nexova Solutions es una consultora de recursos humanos y selección de talento fundada en 2011. Tiene su sede principal en Valencia, España, y una oficina en Miami, Estados Unidos. Cuenta con aproximadamente 120 empleados y factura cerca de 8 millones de dólares al año.
 
-Cada proyecto te indicará el archivo de contexto correcto. Usa su contenido para crear el contexto de tu proyecto y que todo el trabajo del proyecto y tus agentes de código de IA usen los mismos datos de dominio, nombres de campos y restricciones. No copies y pegues sus contenidos; procésalos primero con tus agentes.
+## Líneas de negocio
 
----
+- Selección de ejecutivos y profesionales de nivel medio.
+- Equipos externalizados de atención al cliente para empresas.
+- Formación corporativa en liderazgo y habilidades interpersonales.
 
-_Hasta que añadas tu contexto, mantén este placeholder para que la estructura del repositorio quede clara._
+## Situación actual
 
-_These instructions are also available in [English](./CONTEXT.md)._
+Nexova tiene experiencia y una buena red de clientes y candidatos, pero muchos de sus procesos todavía son manuales. La empresa depende de correos electrónicos, formularios, documentos y hojas de cálculo que no están bien conectados. Esto retrasa la selección de candidatos, la formación, las ventas, la atención al cliente y la preparación de informes.
+
+## Departamentos prioritarios
+
+### Formación Corporativa
+
+El equipo, dirigido por Elena Vargas, administra el catálogo de cursos mediante archivos PDF, formularios y hojas de cálculo. Necesita una plataforma de inscripción, seguimiento del progreso y recomendaciones de formación adaptadas a cada cliente.
+
+### Operaciones de Selección
+
+El equipo, dirigido por Javier Almeida, revisa currículums y se comunica con los candidatos manualmente. Necesita herramientas para buscar perfiles, organizar los procesos y mantener informados a candidatos y clientes.
+
+## Datos principales
+
+- Clientes y sus necesidades de contratación o formación.
+- Candidatos, currículums, experiencia y habilidades.
+- Vacantes y requisitos de cada puesto.
+- Cursos, modalidades, duración y objetivos de aprendizaje.
+- Inscripciones, asistencia y progreso de los participantes.
+- Consultas y comunicaciones con clientes, candidatos y estudiantes.
+
+## Reglas y consideraciones
+
+- Los datos personales de candidatos, empleados y estudiantes deben protegerse.
+- La IA puede ayudar a buscar, ordenar y recomendar, pero una persona debe tomar las decisiones finales.
+- Las recomendaciones deben ser comprensibles y revisables.
+- Los sistemas deben evitar discriminación y sesgos en la evaluación de candidatos.
+- El idioma principal será el español; el soporte en inglés podrá añadirse posteriormente.
+
+## Enfoque inicial del proyecto
+
+El primer agente propuesto será un asistente de formación personalizada. Recibirá información sobre los objetivos, habilidades, experiencia y disponibilidad del usuario; consultará el catálogo de Nexova; y propondrá un itinerario de aprendizaje. El equipo de Formación Corporativa podrá revisar y aprobar sus recomendaciones.
