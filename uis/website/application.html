@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscripción a formación corporativa | Nexova Solutions</title>
+  <meta name="description" content="Inscribe a tu equipo en los programas de formación corporativa de Nexova Solutions: liderazgo, comunicación y gestión de equipos, en modalidad curso, taller o webinar.">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+  <a href="#contenido" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:bg-slate-900 focus:text-white focus:px-4 focus:py-2 focus:rounded">Saltar al contenido</a>
+
+  <header class="bg-white border-b border-slate-200">
+    <div class="mx-auto max-w-3xl px-4 py-4 flex items-center justify-between gap-4">
+      <span class="text-lg font-semibold tracking-tight text-slate-900">Nexova Solutions</span>
+      <nav aria-label="Navegación principal">
+        <a href="index.html" class="text-sm font-medium hover:text-sky-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-sky-700">Volver al inicio</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" class="mx-auto max-w-3xl px-4 py-12">
+    <h1 class="text-3xl font-semibold text-slate-900">Inscripción a formación corporativa</h1>
+    <p class="mt-4 text-slate-600">Completa los datos de tu empresa y del programa que te interesa. El equipo de Formación Corporativa, dirigido por Elena Vargas, revisa cada solicitud y responde con una propuesta de catálogo adaptada a tu perfil.</p>
+    <p class="mt-2 text-sm text-slate-500">Los campos marcados con asterisco son obligatorios.</p>
+
+    <form id="formulario-inscripcion" class="mt-10 space-y-10" novalidate>
+      <fieldset class="rounded-lg border border-slate-200 bg-white p-6">
+        <legend class="px-2 text-lg font-semibold text-slate-900">Datos de la empresa</legend>
+
+        <div class="mt-4">
+          <label for="empresa-nombre" class="block text-sm font-medium text-slate-700">Razón social de la empresa *</label>
+          <input type="text" id="empresa-nombre" name="empresa_nombre" required autocomplete="organization" aria-describedby="error-empresa-nombre" class="mt-1 w-full rounded border border-slate-300 px-3 py-2 focus:border-sky-600 focus:outline focus:outline-2 focus:outline-sky-600">
+          <p id="error-empresa-nombre" class="mt-1 text-sm text-red-700" role="alert"></p>
+        </div>
+
+        <div class="mt-4">
+          <label for="empresa-cif" class="block text-sm font-medium text-slate-700">CIF o número de identificación fiscal *</label>
+          <input type="text" id="empresa-cif" name="empresa_cif" required aria-describedby="ayuda-empresa-cif error-empresa-cif" class="mt-1 w-full rounded border border-slate-300 px-3 py-2 focus:border-sky-600 focus:outline focus:outline-2 focus:outline-sky-600">
+          <p id="ayuda-empresa-cif" class="mt-1 text-xs text-slate-500">Entre 8 y 15 caracteres, solo letras y números.</p>
+          <p id="error-empresa-cif" class="mt-1 text-sm text-red-700" role="alert"></p>
+        </div>
+
+        <div class="mt-4">
+          <label for="empresa-sector" class="block text-sm font-medium text-slate-700">Sector de actividad *</label>
+          <select id="empresa-sector" name="empresa_sector" required aria-describedby="error-empresa-sector" class="mt-1 w-full rounded border border-slate-300 px-3 py-2 focus:border-sky-600 focus:outline focus:outline-2 focus:outline-sky-600">
+            <option value="">Selecciona un sector</option>
+            <option value="tecnologia">Tecnología</option>
+            <option value="retail">Retail</option>
+            <option value="servicios-financieros">Servicios financieros</option>
+            <option value="otro">Otro</option>
+          </select>
+          <p id="error-empresa-sector" class="mt-1 text-sm text-red-700" role="alert"></p>
+        </div>
+
+        <div class="mt-4">
+          <label for="empresa-empleados" class="block text-sm font-medium text-slate-700">Número de empleados de la empresa *</label>
+          <input type="number" id="empresa-empleados" name="empresa_empleados" min="1" max="100000" required aria-describedby="error-empresa-empleados" class="mt-1 w-full rounded border border-slate-300 px-3 py-2 focus:border-sky-600 focus:outline focus:outline-2 focus:outline-sky-600">
+          <p id="error-empresa-empleados" class="mt-1 text-sm text-red-700" role="alert"></p>
+        </div>
+
+        <fieldset class="mt-6">
+          <legend class="text-sm font-medium text-slate-700">Sede de Nexova que te atiende *</legend>
+          <div class="mt-2 space-y-2">
+            <div class="flex items-center gap-2">
+              <input type="radio" id="sede-valencia" name="sede_nexova" value="valencia" class="h-4 w-4">
+              <label for="sede-valencia" class="text-sm">Valencia, España</label>
+            </div>
+            <div class="flex items-center gap-2">
+              <input type="radio" id="sede-miami" name="sede_nexova" value="miami" class="h-4 w-4">
+              <label for="sede-miami" class="text-sm">Miami, Florida</label>
+            </div>
+          </div>
+          <p id="error-sede-nexova" class="mt-1 text-sm text-red-700" role="alert"></p>
+        </fieldset>
+      </fieldset>
+
+      <fieldset class="rounded-lg border border-slate-200 bg-white p-6">
+        <legend class="px-2 text-lg font-semibold text-slate-900">Persona de contacto</legend>
+
+        <div class="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
+          <div>
+            <label for="contacto-nombre" class="block text-sm font-medium text-slate-700">Nombre *</label>
+            <input type="text" id="contacto-nombre" name="contacto_nombre" required autocomplete="given-name" aria-describedby="error-contacto-nombre" class="mt-1 w-full rounded border border-slate-300 px-3 py-2 focus:border-sky-600 focus:outline focus:outline-2 focus:outline-sky-600">
+            <p id="error-contacto-nombre" class="mt-1 text-sm text-red-700" role="alert"></p>
+          </div>
+          <div>
+            <label for="contacto-apellidos" class="block text-sm font-medium text-slate-700">Apellidos *</label>
+            <input type="text" id="contacto-apellidos" name="contacto_apellidos" required autocomplete="family-name" aria-describedby="error-contacto-apellidos" class="mt-1 w-full rounded border border-slate-300 px-3 py-2 focus:border-sky-600 focus:outline focus:outline-2 focus:outline-sky-600">
+            <p id="error-contacto-apellidos" class="mt-1 text-sm text-red-700" role="alert"></p>
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <label for="contacto-cargo" class="block text-sm font-medium text-slate-700">Cargo en la empresa *</label>
+          <input type="text" id="contacto-cargo" name="contacto_cargo" required autocomplete="organization-title" aria-describedby="error-contacto-cargo" class="mt-1 w-full rounded border border-slate-300 px-3 py-2 focus:border-sky-600 focus:outline focus:outline-2 focus:outline-sky-600">
+          <p id="error-contacto-cargo" class="mt-1 text-sm text-red-700" role="alert"></p>
+        </div>
+
+        <div class="mt-4">
+          <label for="contacto-email" class="block text-sm font-medium text-slate-700">Correo electrónico corporativo *</label>
+          <input type="email" id="contacto-email" name="contacto_email" required autocomplete="email" aria-describedby="error-contacto-email" class="mt-1 w-full rounded border border-slate-300 px-3 py-2 focus:border-sky-600 focus:outline focus:outline-2 focus:outline-sky-600">
+          <p id="error-contacto-email" class="mt-1 text-sm text-red-700" role="alert"></p>
+        </div>
+
+        <div class="mt-4">
+          <label for="contacto-telefono" class="block text-sm font-medium text-slate-700">Teléfono *</label>
+          <input type="tel" id="contacto-telefono" name="contacto_telefono" required autocomplete="tel" aria-describedby="ayuda-contacto-telefono error-contacto-telefono" class="mt-1 w-full rounded border border-slate-300 px-3 py-2 focus:border-sky-600 focus:outline focus:outline-2 focus:outline-sky-600">
+          <p id="ayuda-contacto-telefono" class="mt-1 text-xs text-slate-500">Entre 9 y 15 dígitos. Puedes incluir el prefijo internacional.</p>
+          <p id="error-contacto-telefono" class="mt-1 text-sm text-red-700" role="alert"></p>
+        </div>
+      </fieldset>
+
+      <fieldset class="rounded-lg border border-slate-200 bg-white p-6">
+        <legend class="px-2 text-lg font-semibold text-slate-900">Programa de formación</legend>
+
+        <div class="mt-4">
+          <label for="programa-tematica" class="block text-sm font-medium text-slate-700">Temática del programa *</label>
+          <select id="programa-tematica" name="programa_tematica" required aria-describedby="error-programa-tematica" class="mt-1 w-full rounded border border-slate-300 px-3 py-2 focus:border-sky-600 focus:outline focus:outline-2 focus:outline-sky-600">
+            <option value="">Selecciona una temática</option>
+            <option value="liderazgo">Liderazgo</option>
+            <option value="comunicacion">Comunicación</option>
+            <option value="gestion-de-equipos">Gestión de equipos</option>
+          </select>
+          <p id="error-programa-tematica" class="mt-1 text-sm text-red-700" role="alert"></p>
+        </div>
+
+        <div class="mt-4">
+          <label for="programa-modalidad" class="block text-sm font-medium text-slate-700">Modalidad *</label>
+          <select id="programa-modalidad" name="programa_modalidad" required aria-describedby="error-programa-modalidad" class="mt-1 w-full rounded border border-slate-300 px-3 py-2 focus:border-sky-600 focus:outline focus:outline-2 focus:outline-sky-600">
+            <option value="">Selecciona una modalidad</option>
+            <option value="curso">Curso</option>
+            <option value="taller">Taller</option>
+            <option value="webinar">Webinar</option>
+          </select>
+          <p id="error-programa-modalidad" class="mt-1 text-sm text-red-700" role="alert"></p>
+        </div>
+
+        <div class="mt-4">
+          <label for="programa-participantes" class="block text-sm font-medium text-slate-700">Número de participantes a inscribir *</label>
+          <input type="number" id="programa-participantes" name="programa_participantes" min="1" max="500" required aria-describedby="ayuda-programa-participantes error-programa-participantes" class="mt-1 w-full rounded border border-slate-300 px-3 py-2 focus:border-sky-600 focus:outline focus:outline-2 focus:outline-sky-600">
+          <p id="ayuda-programa-participantes" class="mt-1 text-xs text-slate-500">Entre 1 y 500 personas.</p>
+          <p id="error-programa-participantes" class="mt-1 text-sm text-red-700" role="alert"></p>
+        </div>
+
+        <div class="mt-4">
+          <label for="programa-fecha" class="block text-sm font-medium text-slate-700">Fecha preferida de inicio *</label>
+          <input type="date" id="programa-fecha" name="programa_fecha_inicio" required aria-describedby="ayuda-programa-fecha error-programa-fecha" class="mt-1 w-full rounded border border-slate-300 px-3 py-2 focus:border-sky-600 focus:outline focus:outline-2 focus:outline-sky-600">
+          <p id="ayuda-programa-fecha" class="mt-1 text-xs text-slate-500">Debe ser una fecha posterior a hoy.</p>
+          <p id="error-programa-fecha" class="mt-1 text-sm text-red-700" role="alert"></p>
+        </div>
+
+        <div class="mt-4">
+          <label for="programa-objetivos" class="block text-sm font-medium text-slate-700">Objetivos de la formación *</label>
+          <textarea id="programa-objetivos" name="programa_objetivos" rows="4" required aria-describedby="ayuda-programa-objetivos error-programa-objetivos" class="mt-1 w-full rounded border border-slate-300 px-3 py-2 focus:border-sky-600 focus:outline focus:outline-2 focus:outline-sky-600"></textarea>
+          <p id="ayuda-programa-objetivos" class="mt-1 text-xs text-slate-500">Entre 20 y 600 caracteres. Cuéntanos qué quieres que tu equipo sepa hacer al terminar.</p>
+          <p id="error-programa-objetivos" class="mt-1 text-sm text-red-700" role="alert"></p>
+        </div>
+
+        <div class="mt-6 flex items-start gap-3">
+          <input type="checkbox" id="consentimiento" name="consentimiento_datos" class="mt-1 h-4 w-4">
+          <div>
+            <label for="consentimiento" class="text-sm text-slate-700">Autorizo a Nexova Solutions a tratar estos datos para preparar la propuesta de formación. *</label>
+            <p id="error-consentimiento" class="mt-1 text-sm text-red-700" role="alert"></p>
+          </div>
+        </div>
+      </fieldset>
+
+      <div>
+        <button type="submit" class="rounded bg-sky-700 px-6 py-3 font-medium text-white hover:bg-sky-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-700">Enviar solicitud de inscripción</button>
+        <p id="resumen-errores" class="mt-4 text-sm text-red-700" role="alert"></p>
+        <p id="mensaje-exito" class="mt-4 hidden rounded border border-green-300 bg-green-50 p-4 text-sm text-green-800" role="status"></p>
+      </div>
+    </form>
+  </main>
+
+  <footer class="mt-12 bg-slate-900 text-slate-300">
+    <div class="mx-auto max-w-3xl px-4 py-8 text-sm">
+      <p class="font-semibold text-white">Nexova Solutions</p>
+      <p class="mt-1">Formación Corporativa · formacion@nexovasolutions.com</p>
+      <p class="mt-1">Valencia, España · Miami, Florida</p>
+    </div>
+  </footer>
+
+  <script src="validation.js"></script>
+</body>
+</html>
